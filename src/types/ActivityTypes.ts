@@ -7,7 +7,18 @@ export interface ActivityRecord {
 }
 
 export type ActivityCategory = 'ACCOUNT' | 'OB' | 'IB' | "TEAM'S DEV" | '';
-export type ActivityAction = 'EMAIL' | 'PROCESS' | 'MEETING' | 'ENDO' | 'SMS' | 'WC' | '';
+export type ActivityAction = 
+  | 'EMAIL' 
+  | 'PROCESS' 
+  | 'MEETING' 
+  | 'ENDO' 
+  | 'SMS' 
+  | 'WC' 
+  | 'PUBLIC REVIEW' 
+  | 'TRAINING'
+  | 'COACHING'
+  | 'CALL LISTENING'
+  | '';
 
 export interface CategoryCount {
   category: string;

@@ -5,6 +5,7 @@ import ActivityInput from '@/components/ActivityInput';
 import ActivityDashboard from '@/components/ActivityDashboard';
 import ActivityTable from '@/components/ActivityTable';
 import ActivitySummary from '@/components/ActivitySummary';
+import ActivitySummaryTable from '@/components/ActivitySummaryTable';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ActivityRecord } from '@/types/ActivityTypes';
@@ -92,6 +93,8 @@ const Index = () => {
 
         {records.length > 0 && (
           <>
+            <ActivitySummaryTable records={records} />
+            
             <ActivitySummary records={records} />
             
             <Tabs defaultValue="dashboard" className="space-y-4">
